@@ -1,18 +1,4 @@
-// var Controller = (function () {
-//     document.querySelector('.menu-bar-btn').addEventListener('click', () => {
 
-//         document.querySelector('.bar1').classList.toggle('press');
-//         document.querySelector('.bar2').classList.toggle('press');
-//         document.querySelector('.bar3').classList.toggle('press');
-//         document.querySelector('.menu-bar-btn').classList.toggle('press');
-//         document.querySelector('.menu-bar-option').classList.toggle('active');
-//         document.querySelector('.menu-bar-list').classList.toggle('active');
-//         document.querySelectorAll('.menu-bar-list li').forEach(link => {
-//             link.classList.toggle('fade');
-//         });
-
-//     });
-// })();
 var tracker = (function () {
 
     fetch("https://api.covid19india.org/data.json")
@@ -33,12 +19,13 @@ var tracker = (function () {
             // var increasedRecovery = statedata[0].recovered - pastDataUpdate.totalrecovered;
             // document.querySelector('.card-3 span').innerHTML = (`+ ${increasedRecovery}`);
 
-            // document.querySelector('.card-1 p').innerHTML = parseInt(statedata[0].confirmed);
-            // document.querySelector('.card-2 p').innerHTML = parseInt(statedata[0].deaths);
+            document.querySelector('.total-count').innerHTML = parseInt(statedata[0].confirmed);
+            document.querySelector('.death-count').innerHTML = parseInt(statedata[0].deaths);
+        
             // document.querySelector('.card-3 p').innerHTML = parseInt(statedata[0].recovered);
-            // document.querySelector('.card-head p').innerHTML = ('As per ' + statedata[0].lastupdatedtime + ' update given by Govt of India.');
+            document.querySelector('.date-note p').innerHTML = ('As per ' + statedata[0].lastupdatedtime + ' update given by Govt of India.');
             // document.querySelector('.card-4 p').innerHTML = parseInt(pastDataUpdate.dailyconfirmed);
-            // document.querySelector('.card-5 p').innerHTML = parseInt(statedata[0].active);
+            document.querySelector('.active-count').innerHTML = parseInt(statedata[0].active);
             
             for (var i = 1; i < statedata.length; i++) {
                 var current = statedata[i];
