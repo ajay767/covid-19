@@ -86,6 +86,23 @@ padding: 15px;
 border-radius: 5px;
 padding: 15px;
 }
+
+.video{
+    width: 100%;
+}
+.movie{
+    border-radius: 5px;
+    overflow: hidden;
+    width: 98%;
+    margin: auto;
+}
+
+
+
+
+
+
+
 .sponser {
     width: 100%;
 }
