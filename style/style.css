@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: black;
+    background-color: #b9bbbf;
     position: relative;
     min-height: 100vh;
 }
@@ -18,7 +18,9 @@ header {
 }
 
 nav {
-    background-color: #002b8e;
+    
+    color: white;
+    background-color: #0e0e0e;
     height: 100%;
     width: 98%;
     margin: 5px auto;
@@ -57,17 +59,18 @@ nav {
     margin: 5px;
     font-size: 26px;
 }
-.sponser{
+
+.sponser {
     width: 100%;
 }
-.sponser-element{
+
+.sponser-element {
     height: 50px;
     font-family: 'Varela Round', sans-serif;
-    border: 1px solid rgb(134,124,124);
     border-radius: 5px;
     width: 98%;
     margin: 10px auto;
-    background-color: rgb(27, 27, 41);
+    background-color: rgb(58, 58, 62);
     color: white;
     padding: 14px;
     text-align: justify;
@@ -81,7 +84,6 @@ nav {
 }
 
 .container-alert {
-    border: 1px solid rgb(134, 124, 124);
     border-radius: 5px;
     position: relative;
     width: 98%;
@@ -92,6 +94,7 @@ nav {
 .message-top::before {
     content: "";
     position: absolute;
+    border-radius: 6px;
     height: 100%;
     width: 100%;
     bottom: 0;
@@ -103,13 +106,15 @@ nav {
 }
 
 .message-top {
-    border-radius: 5px;
-    padding: 8px;
-    width: 100%;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
+font-family: 'Varela Round', sans-serif;
+color: white;
+border-radius: 6px;
+padding: 8px;
+width: 100%;
+margin: auto;
+display: flex;
+flex-direction: column;
+justify-content: start;
 }
 
 .message-head {
@@ -135,30 +140,35 @@ nav {
     font-size: 18px;
     text-align: justify;
 }
-.alert-top-btn{
+
+.alert-top-btn {
     height: 35px;
     width: 100px;
     border: none;
     border-radius: 5px;
-font-size: 16px;
-padding: 7px;
-text-decoration: none;
+    font-size: 16px;
+    padding: 7px;
+    text-decoration: none;
     background-color: rgb(6, 79, 216);
     color: white;
 }
-.covid-count{
+
+.covid-count {
     width: 100%;
     font-family: 'Varela Round', sans-serif;
     color: white;
-    
+
 }
-.statics{
+
+.statics {
     width: 98%;
     margin: 10px auto;
     display: flex;
     justify-content: space-between;
 }
-.total , .death{
+
+.total,
+.death {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -166,27 +176,29 @@ text-decoration: none;
     height: 100px;
     width: 49%;
     height: 100px;
-    border: 1px solid rgb(134,124,124);
     border-radius: 5px;
 }
-.total{
+
+.total {
     background-color: rgb(14, 14, 14);
 }
-.death{
+
+.death {
     background-color: rgb(14, 14, 14);
 }
-.counter{
+
+.counter {
     font-size: 25px;
 }
-.card-head{
+
+.card-head {
     font-size: 20px;
     margin-bottom: 5px;
 }
 
-.active{
+.active {
     width: 98%;
     margin: 10px auto;
-    border: 1px solid rgb(134,124,124);
     border-radius: 5px;
     padding: 10px;
     display: flex;
@@ -195,35 +207,44 @@ text-decoration: none;
     align-items: center;
     background: #291010;
 }
-.state-wise{
+
+.state-wise {
     width: 100%;
     font-family: 'Varela Round', sans-serif;
-color: white;
+    color: rgb(245, 240, 240);
 }
-.data-container{
-    width: 98%;
+
+.data-container {
+    width: 99%;
     margin: auto;
 }
-.data-container h3{
+
+.data-container h3 {
     text-align: center;
     padding: 11px;
     font-size: 25px;
 }
-.data-table{
-width: 100%;
-border-spacing: 5px 5px;
+
+.data-table {
+    width: 100%;
+    /* border-spacing: 5px 5px; */
 }
-.data-table tr td{
+
+.data-table tr td , .data-table tr th{
     text-align: center;
     height: 20px;
     padding: 10px;
     border-radius: 5px;
 }
-.data-table tr{
-    background-color: rgb(41, 40, 40);
+.data-table tr th{
+    background-color: black;
 }
-.data-table tr:nth-child(odd){
-    background-color: #1f226b;
+.data-table tbody tr{
+    background-color: rgb(77, 76, 76);
+}
+
+.data-table tr:nth-of-type(even) {
+    background-color: #2f3055;
 }
 
 
@@ -250,7 +271,7 @@ footer {
     font-family: 'Varela Round', sans-serif;
     background-color: rgb(45, 45, 45);
     color: white;
-    width:100%;
+    width: 100%;
     border-radius: 5px;
     display: flex;
     justify-content: space-evenly;
