@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    position: relative;
+    min-height: 100vh;
+}
+
+header {
+
+    color: white;
+    height: 65px;
+    width: 100%;
+}
+
+nav {
+    background-color: #002b8e;
+    height: 100%;
+    width: 98%;
+    margin: 5px auto;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+}
+
+.person {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+
+}
+
+.person img {
+    height: 50px;
+    width: 50px;
+}
+
+.person span {
+    margin: 10px;
+    font-size: 25px;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.right-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.nav-head-icon {
+    margin: 5px;
+    font-size: 26px;
+}
+.sponser{
+    width: 100%;
+}
+.sponser-element{
+    height: 50px;
+    font-family: 'Varela Round', sans-serif;
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 98%;
+    margin: 10px auto;
+    background-color: rgb(27, 27, 41);
+    color: white;
+    padding: 14px;
+    text-align: justify;
+}
+
+.alert-box-top {
+
+    width: 100%;
+    font-family: 'Varela Round', sans-serif;
+    color: white;
+}
+
+.container-alert {
+    border: 1px solid rgb(134, 124, 124);
+    border-radius: 5px;
+    position: relative;
+    width: 98%;
+    margin: auto;
+    margin-top: 13px;
+}
+
+.message-top::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: -100;
+    background: url(../media/alert-bg.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.message-top {
+    border-radius: 5px;
+    padding: 8px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.message-head {
+    display: flex;
+    justify-content: start;
+    margin: 10px 0px;
+
+}
+
+.message-head h3 {
+    font-family: 'Arvo', serif;
+    font-size: 30px;
+}
+
+.message-head ion-icon {
+    padding: 5px;
+    font-size: 27px;
+    color: #f90d2e;
+}
+
+.message-top p {
+    margin: 10px 0px;
+    font-size: 18px;
+    text-align: justify;
+}
+.alert-top-btn{
+    height: 35px;
+    width: 100px;
+    border: none;
+    border-radius: 5px;
+font-size: 16px;
+padding: 7px;
+text-decoration: none;
+    background-color: rgb(6, 79, 216);
+    color: white;
+}
+.covid-count{
+    width: 100%;
+    font-family: 'Varela Round', sans-serif;
+    color: white;
+    
+}
+.statics{
+    width: 98%;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.total , .death{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 49%;
+    height: 100px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+.total{
+    background-color: rgb(14, 14, 14);
+}
+.death{
+    background-color: rgb(14, 14, 14);
+}
+.counter{
+    font-size: 25px;
+}
+.card-head{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.active{
+    width: 98%;
+    margin: 10px auto;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #291010;
+}
+.state-wise{
+    width: 100%;
+    font-family: 'Varela Round', sans-serif;
+color: white;
+}
+.data-container{
+    width: 98%;
+    margin: auto;
+}
+.data-container h3{
+    text-align: center;
+    padding: 11px;
+    font-size: 25px;
+}
+.data-table{
+width: 100%;
+border-spacing: 5px 5px;
+}
+.data-table tr td{
+    text-align: center;
+    height: 20px;
+    padding: 10px;
+    border-radius: 5px;
+}
+.data-table tr{
+    background-color: rgb(41, 40, 40);
+}
+.data-table tr:nth-child(odd){
+    background-color: #1f226b;
+}
+
+
+
+
+
+
+
+
+
+
+footer {
+    position: sticky;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 81px;
+
+}
+
+.foot-wrapper {
+
+    height: 100%;
+    font-family: 'Varela Round', sans-serif;
+    background-color: rgb(45, 45, 45);
+    color: white;
+    width:100%;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: auto;
+}
+
+.foot-nav {
+    height: 80%;
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.foot-nav ion-icon {
+    font-size: 20px;
+}
+
+.foot-nav span {
+    font-size: 20px;
+    margin-top: 5px;
+}
