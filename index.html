@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Arvo&family=Varela+Round&display=swap" rel="stylesheet">
     <title>Covid-19| WEBPROZY</title>
 </head>
 
 <body>
-    <header>
-        <nav>
+    <header >
+        <nav  data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" >
             <div class="person">
                 <img src="media/doctor-avatar.png" alt="">
                 <span>Welcome</span>
@@ -22,12 +23,12 @@
             </div>
         </nav>
     </header>
-    <section class="sponser">
+    <section  data-aos="fade-up" data-aos-duration="800" data-aos-anchor-placement="bottom-bottom" class="sponser" >
         <div class="sponser-element">
             <p>Powerd by WEBPROZY</p>
         </div>
     </section>
-    <section class="alert-box-top">
+    <section  data-aos="fade-up" data-aos-duration="1500" class="alert-box-top">
         <div class="container-alert">
             <div class="message-top">
                 <div class="message-head">
@@ -45,8 +46,8 @@
 
     </section>
 
-    <section class="covid-count">
-        <div class="statics">
+    <section  data-aos="fade-up" data-aos-duration="1700"  class="covid-count">
+        <div data-aos="zoom-in" class="statics">
             <div class="total">
                 <span class="counter">239232</span>
                  <ion-icon  style="color: rgb(30, 99, 3); font-size: 30px; " name="arrow-up-outline"></ion-icon>
@@ -61,7 +62,7 @@
                 
             </div>
         </div>
-        <div class="active">
+        <div data-aos="zoom-in" data-aos-duration="1800" class="active">
             <span class="counter">3536365</span>
             <ion-icon style=" font-size: 25px; color: red; font-size: 30px; " name="logo-react"></ion-icon>
             <span class="card-head">Active </span>
@@ -71,32 +72,21 @@
     
     <div class="data-container">
         
-        <h3>State Wise </h3>
-        <hr style="border: none; border-bottom: 2px solid white; width: 50%; margin:30px auto;">
+        <h3 style="color: black;" data-aos="fade-up"
+        data-aos-anchor-placement="bottom-bottom" data-aos-duration="2000">State Wise </h3>
+        <!-- <hr style="border: none; border-bottom: 2px solid rgb(7, 6, 6); width: 50%; margin:30px auto;"> -->
         <table class="data-table">
-            <tr>
-                <td>State</td>
-                <td>Active</td>
-                <td>Death</td>
-                <td>Recovered</td>
-            </tr>
-            <tr>
-                <td>Madhya Pradesh</td>
-                <td>500</td>
-                <td>10</td>
-                <td>1000</td>
-            </tr>
-            <tr>
-                <td>Madhya Pradesh</td>
-                <td>500</td>
-                <td>10</td>
-                <td>1000</td>
-            </tr> <tr>
-                <td>Madhya Pradesh</td>
-                <td>500</td>
-                <td>10</td>
-                <td>1000</td>
-            </tr>
+            <tbody data-aos="fade-up"
+            data-aos-anchor-placement="bottom-bottom" data-aos-duration="2100">
+                <tr>
+                    <th>State</th>
+                    <th>Active</th>
+                    <th>Death</th>
+                    <th>Recovered</th>
+                </tr>
+            </tbody>
+            
+            
         </table>
         
     </div>
@@ -133,6 +123,13 @@
 
     <script src="app.js"></script>
     <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+       AOS.init();
+    </script>
 </body>
 
 </html>
