@@ -11,8 +11,8 @@
 </head>
 
 <body>
-    <header >
-        <nav  data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" >
+    <header>
+        <nav data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
             <div class="person">
                 <img src="media/doctor-avatar.png" alt="">
                 <span>Welcome</span>
@@ -24,22 +24,30 @@
         </nav>
     </header>
     <section data-aos="fade-up" data-aos-duration="600" data-aos-anchor-placement="bottom-bottom" class="date">
-<div class="date-note">
-    <p></p>
-</div>
+        <div class="date-note">
+            <p></p>
+        </div>
     </section>
-    <section data-aos="fade-up" data-aos-duration="800" data-aos-anchor-placement="bottom-bottom" class="website-notice">
+    <section data-aos="fade-up" data-aos-duration="800" data-aos-anchor-placement="bottom-bottom"
+        class="website-notice">
         <div class="note">
             <h3>Note!</h3>
             <p>Currently all the services of website is not working please check back later</p>
         </div>
     </section>
-    <section  data-aos="fade-up" data-aos-duration="900" data-aos-anchor-placement="bottom-bottom" class="sponser" >
+    <section data-aos="fade-up" data-aos-duration="900" data-aos-anchor-placement="bottom-bottom" class="sponser">
         <div class="sponser-element">
             <p>Powerd by WEBPROZY</p>
         </div>
     </section>
-    <section  data-aos="fade-up" data-aos-duration="1000" class="alert-box-top">
+    <section class="video">
+       <div class="movie">
+        <video id="vid" width="100%" height="250" autoplay muted>
+            <source src="media/virus.mp4" type="video/mp4">
+        </video>
+       </div>
+    </section>
+    <section data-aos="fade-up" data-aos-duration="1000" class="alert-box-top">
         <div class="container-alert">
             <div class="message-top">
                 <div class="message-head">
@@ -57,20 +65,20 @@
 
     </section>
 
-    <section  data-aos="fade-up" data-aos-duration="1300"  class="covid-count">
+    <section data-aos="fade-up" data-aos-duration="1300" class="covid-count">
         <div data-aos="zoom-in" class="statics">
             <div class="total">
                 <span class="total-count counter">239232</span>
-                 <ion-icon  style="color: rgb(30, 99, 3); font-size: 30px; " name="arrow-up-outline"></ion-icon>
-                 <span class="card-head">Total</span>
-                
+                <ion-icon style="color: rgb(30, 99, 3); font-size: 30px; " name="arrow-up-outline"></ion-icon>
+                <span class="card-head">Total</span>
+
             </div>
             <div class="death">
                 <span class="death-count counter">239232</span>
                 <ion-icon style="font-size: 30px; color: red;" name="arrow-up-outline"></ion-icon>
                 <span class="card-head">Death </span>
-               
-                
+
+
             </div>
         </div>
         <div data-aos="zoom-in" data-aos-duration="1800" class="active">
@@ -79,29 +87,28 @@
             <span class="card-head">Active </span>
         </div>
     </section>
-<section class="state-wise">
-    
-    <div class="data-container">
-        
-        <h3 style="color: black;" data-aos="fade-up"
-        data-aos-anchor-placement="bottom-bottom" data-aos-duration="2000">State Wise </h3>
-        <!-- <hr style="border: none; border-bottom: 2px solid rgb(7, 6, 6); width: 50%; margin:30px auto;"> -->
-        <table class="data-table">
-            <tbody data-aos="fade-up"
-            data-aos-duration="1500">
-                <tr>
-                    <th>State</th>
-                    <th>Active</th>
-                    <th>Death</th>
-                    <th>Recovered</th>
-                </tr>
-            </tbody>
-            
-            
-        </table>
-        
-    </div>
-</section>
+    <section class="state-wise">
+
+        <div class="data-container">
+
+            <h3 style="color: black;" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"
+                data-aos-duration="2000">State Wise </h3>
+            <!-- <hr style="border: none; border-bottom: 2px solid rgb(7, 6, 6); width: 50%; margin:30px auto;"> -->
+            <table class="data-table">
+                <tbody data-aos="fade-up" data-aos-duration="1500">
+                    <tr>
+                        <th>State</th>
+                        <th>Active</th>
+                        <th>Death</th>
+                        <th>Recovered</th>
+                    </tr>
+                </tbody>
+
+
+            </table>
+
+        </div>
+    </section>
 
 
 
@@ -139,7 +146,8 @@
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-       AOS.init();
+        AOS.init();
+        document.getElementById('vid').play();
     </script>
 </body>
 
