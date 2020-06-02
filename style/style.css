@@ -59,7 +59,33 @@ nav {
     margin: 5px;
     font-size: 26px;
 }
+.website-notice{
+    width: 100%;
+    margin-top: 10px 0px;
 
+}
+.date{
+    width: 100%;
+    margin: 10px 0px;
+}
+.date-note{
+    background-color: #3F51B5;
+    font-family: 'Varela Round', sans-serif;
+    color: white;
+    width: 98%;
+    margin:auto;
+border-radius: 5px;
+padding: 15px;
+}
+.note{
+    font-family: 'Varela Round', sans-serif;
+    color: white;
+    width: 98%;
+    margin:auto;
+    background-color: rgb(112, 0, 0);
+border-radius: 5px;
+padding: 15px;
+}
 .sponser {
     width: 100%;
 }
